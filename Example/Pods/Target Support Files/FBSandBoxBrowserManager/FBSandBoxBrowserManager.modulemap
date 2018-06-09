@@ -1,0 +1,6 @@
+framework module FBSandBoxBrowserManager {
+  umbrella header "FBSandBoxBrowserManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

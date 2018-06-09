@@ -1,0 +1,36 @@
+PODS:
+  - FBSandBoxBrowserManager (0.1.0):
+    - GCDWebServer (~> 3.0)
+    - GCDWebServer/WebUploader (~> 3.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - GCDWebServer (3.4.2):
+    - GCDWebServer/Core (= 3.4.2)
+  - GCDWebServer/Core (3.4.2)
+  - GCDWebServer/WebUploader (3.4.2):
+    - GCDWebServer/Core
+
+DEPENDENCIES:
+  - FBSandBoxBrowserManager (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBSnapshotTestCase
+    - GCDWebServer
+
+EXTERNAL SOURCES:
+  FBSandBoxBrowserManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSandBoxBrowserManager: 23dfad69e3ae208af382f7522c9f6545ae0fe0bc
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  GCDWebServer: 8d67ee9f634b4bb91eb4b8aee440318a5fc6debd
+
+PODFILE CHECKSUM: b4cb89bdfa32500c648534afd83bbd5abb881abe
+
+COCOAPODS: 1.5.0

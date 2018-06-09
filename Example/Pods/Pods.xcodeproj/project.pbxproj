@@ -1,0 +1,1355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05008FE205F2C2CFF76EB8D95A4FF199 /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = E3AB435332FA69A62BD0C72416618FBB /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B3FEAB258BC1DDFBF7546F41BFE16C /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		051CE582F078D901B4467819ED5FB61B /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DEBE2657305298A6A695143A1ED64A /* GCDWebServerResponse.m */; };
+		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 89721B1C0541058B33B1DD67B904ABC2 /* UIApplication+StrictKeyWindow.m */; };
+		163B70D7BEF36E716D7C18D09A8DB3ED /* FBSandBoxBrowserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A085E19F3E31C877D25CF8680A216B3 /* FBSandBoxBrowserManager.m */; };
+		16FBC0A264F8E8CFC7BB5781B94E0CFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C2CBF9AAE3F79B436F49068AEFC9DE /* Foundation.framework */; };
+		17C70C36F8315E8C21BF63CFFD0596E8 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 390EA9D3C5002D3A9DE6699A22F1D179 /* GCDWebServerFunctions.m */; };
+		19B1ECA05047795F4CEEBEC230028768 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B050D928AA8BCF8607079383DEC78C /* GCDWebServerDataResponse.m */; };
+		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5810DA657D6FFD379908DF8E4671BB /* SwiftSupport.swift */; };
+		23EE01285F43EDEBE47385D46DC82C4F /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B97974483805A9AB68EABC2B4FC5A7 /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 815C635C3C2E06A780566397F5CF8351 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3180A0DFDC7F3FDFDEE67BBC8C0EDF76 /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 410CE09CEB5E04DC20103634E0A5C60C /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		336C0DB24D7ACF66F99852CDF3C85863 /* Pods-FBSandBoxBrowserManager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4828E3465CE42D0CE12384EC951D5917 /* Pods-FBSandBoxBrowserManager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34E61414987B44A3F9606C945C67ED27 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 336FE919B8F72EE797277889528C340A /* GCDWebServerFileRequest.m */; };
+		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC5B1500367CFA65C46F16D879DB5E6 /* UIImage+Diff.m */; };
+		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D180DD7DBE11CCB4E6F2BC9B4B50D88 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		49CFD61863234EDB78DE91235D6DB6C6 /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F2A42C4BF876A8E7C9E0F11A984FCB1 /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D502AB6366987D412F9001F07465DE /* FBSnapshotTestCase-dummy.m */; };
+		54274588A9A2D333B614399A47D860BE /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BFFEDD452E6E6A7DDDE7933D099F530 /* GCDWebServerFileResponse.m */; };
+		542EF018C218A58F3D909A7873A287D1 /* GCDWebServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1865B064CDD6EC096ABD6F86F091B8 /* GCDWebServer-dummy.m */; };
+		58862D15341ABBA671EA45F6FC1EFAC5 /* Pods-FBSandBoxBrowserManager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 741E82016E8B791ABDAC272BDA9DB8F0 /* Pods-FBSandBoxBrowserManager_Tests-dummy.m */; };
+		61D70521098CF00F21B12765461AA594 /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 175AB8AD71BD890B4146B15267B854CC /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		630453A5F46ECB86BD74FA6667509B30 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 125D9CC6EAFF9939A0C3E42C684A3F67 /* GCDWebServerDataRequest.m */; };
+		6644C3852A37F4781A1C4638C7A9A8FD /* GCDWebServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A3A9622487EE9C2CB1BAACBFCC3E54 /* GCDWebServer.framework */; };
+		69C306ED09F48DE95293681EED74085C /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C130ACE445D9567D2F6D3617B03A290 /* GCDWebServerErrorResponse.m */; };
+		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DCA74FF238E32A95167F8C4706B9FE /* UIImage+Compare.m */; };
+		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DE54831B101608E80EABA923B4B /* UIImage+Snapshot.m */; };
+		7566AF2B0E802B1150629B1C4C876F19 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4A29283059E8A653D64FC46746081 /* GCDWebServerRequest.m */; };
+		76486403F4B84F7DC55757A80D713130 /* FBSandBoxBrowserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C65A1AF3FB79C4090CFCDA3A856B49AC /* FBSandBoxBrowserManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		767C8D7DCE481775F09EE596C8E1B055 /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1685C443B86E3899DA46C938EDB340DD /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BA9C70AA872F48D43160B752E04B022 /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C99ED3703CE8A78AD8D09782E8586FB /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E9B14D5F8842A86CA86F2AF45230725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A56ED70BEAB395D7FCDA5596DFB94A /* XCTest.framework */; };
+		8195FAD8C0FCAA29FA52F394E05A1089 /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 41138A52BE01D7BB8D620E48ED62562D /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82817B039CF7278067CA3E5ED6735AAF /* FBSandBoxBrowserManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA0CEFF736202F01D525FACF619C18ED /* FBSandBoxBrowserManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86BBA5C8F8F65806F3E3BB35AEEF6FC /* UIKit.framework */; };
+		8796996A2B075A2279241A547AD236D9 /* FBSandBoxBrowserManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD879C9B063D2F30897889CF835E6F40 /* FBSandBoxBrowserManager-dummy.m */; };
+		89C1DDCA6C20821C2E0A4E6AEDE142C9 /* GCDWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4A87EABDAA819C12810EFF4C16761F /* GCDWebUploader.m */; };
+		8AE6225F6B1EF82D1D44B55032EBDACC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A415C376B8E44D35F067A1B7CC22B4E /* CFNetwork.framework */; };
+		91D0138ACFAD733E4061F12E450C336C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C2CBF9AAE3F79B436F49068AEFC9DE /* Foundation.framework */; };
+		9276F27A2805C357914BACDF898EB9A1 /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C7C7156BFB6869F2FEEFF0B3C4495DC8 /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93A901D04F270F6A9EC31CBAA4FF121F /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 631A6784D3854F18EB1D9A2E2A6A137A /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = B6CBC1C73D8825CA18A4681A3D6C7F00 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CB1A9D4F9227B259C687EE42F670C38 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 00556565F86DEB4278C0EEE72B26CBE0 /* GCDWebServerConnection.m */; };
+		9E39A5C859FB160DA76E6399E678B2AF /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8967C1F4C995F4064831CF339CB588F /* GCDWebServer.m */; };
+		A038A24BB98078B39CC0092E9EF00FB6 /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A968D5DC318320CB16BCED6245ECC35D /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0785AEB1B7053626D5E9202F0465592 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = DC097BE4EF360049B59065B13F1D3650 /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3279A9E414353E0F77E226FB78129CB /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = ACDEC7C313986CB87C9A35667E92E1B7 /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74B8C96AEB5BAF21F944E9113A1D3A34 /* FBSnapshotTestController.m */; };
+		A5FC9EAFB2986806F62DF6D2B7BFB0A5 /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D3374D17D684B1362D79CB2AAAD362B /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8F0266581D6533104BA3498A48374ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C2CBF9AAE3F79B436F49068AEFC9DE /* Foundation.framework */; };
+		B27DFD6025D94758785918F1D6F6C060 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837FEA901118BCEE9167CB01E1B3AEC4 /* QuartzCore.framework */; };
+		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F2A801BA0CCB50F15C606E37FF50B54 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7BE30FB7DBF3B2485850DA6722E9D81 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43302AF3B653F3E5D9ADB3B7BE4BE4F8 /* MobileCoreServices.framework */; };
+		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 95A8DB5F7491F21A0A2A30BAC1AA13AF /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 69875CC11B8FA3887C51C5C3A2D9AA4D /* FBSnapshotTestCase.m */; };
+		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 883ABE1F740F22638F3CC76D4826FF39 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 13730F841F7836B10F4DC487BCDD1E9A /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		CC3B9E4B11A1B88BDDAFD70BA008B02A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C2CBF9AAE3F79B436F49068AEFC9DE /* Foundation.framework */; };
+		CD4F27D86269DB63EBCCCFF331EEF876 /* GCDWebUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = 42B0190E1382991D995336245E454303 /* GCDWebUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D479484F76DD970B3E93272C4E0615E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C2CBF9AAE3F79B436F49068AEFC9DE /* Foundation.framework */; };
+		D50634460F119A226F32CC64C6B5BCC4 /* Pods-FBSandBoxBrowserManager_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A790D697441ACE3292857F1B8E3E0BC /* Pods-FBSandBoxBrowserManager_Example-dummy.m */; };
+		DABA8DDE33B143E87190B5B6FAEF1501 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F368C01BC7449BC2745424A200D44D18 /* GCDWebServerURLEncodedFormRequest.m */; };
+		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E25E46A6334D4DCBAEBCADBD8C5010 /* FBSnapshotTestCasePlatform.m */; };
+		DF3B2EEAB090298D562C09366C1F1354 /* GCDWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6DE8D65CE6D67280BDAE371804D834F /* GCDWebUploader.bundle */; };
+		E16B3FBC0F81A39DDC06B3374AFDCD83 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BE2B70C60964705912AA198D51ED21D /* GCDWebServerMultiPartFormRequest.m */; };
+		E6AF5CC692B2E8E7B88EB47BED3F6BE7 /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A8DED70A905642999B3327BDEE8761EC /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5D141DECDD4B18CAA06CF9FC15050A1 /* Pods-FBSandBoxBrowserManager_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4CDE43BDD7BD3793C1E27EBB6F4988 /* Pods-FBSandBoxBrowserManager_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB143055436A0628B0670DE84B6DBE7A /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F7E9B3D36B107C6363025AF87194D4E /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FB34D8295D50C6C0DF9371D3AD536D9F /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 463F92C23EEC7EE3AC8594A3D44A520F /* GCDWebServerStreamedResponse.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29E1288F03B02354B53DBB64D5F172CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5189963A29429293A0B3A9508DAC59B8;
+			remoteInfo = GCDWebServer;
+		};
+		8C07ACD0E21B09C78077B4DF81B8BF19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA4CA1050E7B2D3FBFAF34767F485AE9;
+			remoteInfo = FBSandBoxBrowserManager;
+		};
+		C0B88812384ECDB271A5ECB99F24495A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5189963A29429293A0B3A9508DAC59B8;
+			remoteInfo = GCDWebServer;
+		};
+		C13D358FF21B86D072C8D035C1B8206B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99DFC4EBAC67801733DE7F7688DC1163;
+			remoteInfo = "Pods-FBSandBoxBrowserManager_Example";
+		};
+		DB4853800BBA3386C4AB3C7EEB8090FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34CD2E3428AB802BACA62286FF5074B1;
+			remoteInfo = FBSnapshotTestCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00556565F86DEB4278C0EEE72B26CBE0 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerConnection.m; path = GCDWebServer/Core/GCDWebServerConnection.m; sourceTree = "<group>"; };
+		0BE2B70C60964705912AA198D51ED21D /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerMultiPartFormRequest.m; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		0CDA7702F59E1485A941375F52B9A91C /* FBSandBoxBrowserManager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = FBSandBoxBrowserManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0CFD062AEF7F14264304CF83A54043DD /* Pods-FBSandBoxBrowserManager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FBSandBoxBrowserManager_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		0ECED0CA200288159B4B8562F3A48A96 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F5810DA657D6FFD379908DF8E4671BB /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		125D9CC6EAFF9939A0C3E42C684A3F67 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataRequest.m; path = GCDWebServer/Requests/GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		13730F841F7836B10F4DC487BCDD1E9A /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		13973CCF8260240FA5515346C6809D6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E8C0519337F71C4B2B46EEA678FEE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1613E5942F6E8A449C8B5BD89331E90B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1685C443B86E3899DA46C938EDB340DD /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileRequest.h; path = GCDWebServer/Requests/GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		175AB8AD71BD890B4146B15267B854CC /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerStreamedResponse.h; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		183234ACC700E5DA7642BDAAAA48F637 /* Pods-FBSandBoxBrowserManager_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSandBoxBrowserManager_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1F2A42C4BF876A8E7C9E0F11A984FCB1 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerResponse.h; path = GCDWebServer/Core/GCDWebServerResponse.h; sourceTree = "<group>"; };
+		1F7E9B3D36B107C6363025AF87194D4E /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerPrivate.h; path = GCDWebServer/Core/GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		2A415C376B8E44D35F067A1B7CC22B4E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		2C130ACE445D9567D2F6D3617B03A290 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerErrorResponse.m; path = GCDWebServer/Responses/GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		336FE919B8F72EE797277889528C340A /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileRequest.m; path = GCDWebServer/Requests/GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		377289CD229754E2AFC03A81C1A13AC3 /* Pods-FBSandBoxBrowserManager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FBSandBoxBrowserManager_Example.modulemap"; sourceTree = "<group>"; };
+		37B050D928AA8BCF8607079383DEC78C /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataResponse.m; path = GCDWebServer/Responses/GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		390EA9D3C5002D3A9DE6699A22F1D179 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFunctions.m; path = GCDWebServer/Core/GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		39C2CBF9AAE3F79B436F49068AEFC9DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A085E19F3E31C877D25CF8680A216B3 /* FBSandBoxBrowserManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSandBoxBrowserManager.m; path = FBSandBoxBrowserManager/Classes/FBSandBoxBrowserManager.m; sourceTree = "<group>"; };
+		410CE09CEB5E04DC20103634E0A5C60C /* GCDWebServerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerConnection.h; path = GCDWebServer/Core/GCDWebServerConnection.h; sourceTree = "<group>"; };
+		41138A52BE01D7BB8D620E48ED62562D /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerErrorResponse.h; path = GCDWebServer/Responses/GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		42B0190E1382991D995336245E454303 /* GCDWebUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebUploader.h; path = GCDWebUploader/GCDWebUploader.h; sourceTree = "<group>"; };
+		43302AF3B653F3E5D9ADB3B7BE4BE4F8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		463F92C23EEC7EE3AC8594A3D44A520F /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = GCDWebServer/Responses/GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		47B499A55B2336CC6939D7816E393D7F /* Pods-FBSandBoxBrowserManager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FBSandBoxBrowserManager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4828E3465CE42D0CE12384EC951D5917 /* Pods-FBSandBoxBrowserManager_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FBSandBoxBrowserManager_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4C99ED3703CE8A78AD8D09782E8586FB /* GCDWebServerRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerRequest.h; path = GCDWebServer/Core/GCDWebServerRequest.h; sourceTree = "<group>"; };
+		5405185325A47E972D6AE0771344EB5C /* Pods-FBSandBoxBrowserManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSandBoxBrowserManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5444348BFBD9CE52C05FF852184CC520 /* Pods-FBSandBoxBrowserManager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FBSandBoxBrowserManager_Tests-resources.sh"; sourceTree = "<group>"; };
+		5731C322F5150216A2705211B9C5A522 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
+		594D529E73523CC60070A67C6C990B5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC22DA9BB771DF9DAD50CBC0E9FDD0F /* Pods-FBSandBoxBrowserManager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FBSandBoxBrowserManager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C2D253FCF5E29624C29C17C88FBF0BB /* Pods-FBSandBoxBrowserManager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSandBoxBrowserManager_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5C4A87EABDAA819C12810EFF4C16761F /* GCDWebUploader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebUploader.m; path = GCDWebUploader/GCDWebUploader.m; sourceTree = "<group>"; };
+		5D180DD7DBE11CCB4E6F2BC9B4B50D88 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		60D502AB6366987D412F9001F07465DE /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		61356F8078B6C2E471B808E6AA2009E7 /* FBSandBoxBrowserManager.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSandBoxBrowserManager.xcconfig; sourceTree = "<group>"; };
+		631A6784D3854F18EB1D9A2E2A6A137A /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerMultiPartFormRequest.h; path = GCDWebServer/Requests/GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		64359DD752B048033F0BAFF4A05F2BCE /* FBSandBoxBrowserManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSandBoxBrowserManager-prefix.pch"; sourceTree = "<group>"; };
+		64B3FEAB258BC1DDFBF7546F41BFE16C /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		69875CC11B8FA3887C51C5C3A2D9AA4D /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		6A790D697441ACE3292857F1B8E3E0BC /* Pods-FBSandBoxBrowserManager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FBSandBoxBrowserManager_Example-dummy.m"; sourceTree = "<group>"; };
+		6B4B4D0203B4E662D0FD528AC7076AF1 /* Pods-FBSandBoxBrowserManager_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FBSandBoxBrowserManager_Example-resources.sh"; sourceTree = "<group>"; };
+		71248C93A945DE5F6CEC8321539445BD /* GCDWebServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-prefix.pch"; sourceTree = "<group>"; };
+		72DEBE2657305298A6A695143A1ED64A /* GCDWebServerResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerResponse.m; path = GCDWebServer/Core/GCDWebServerResponse.m; sourceTree = "<group>"; };
+		741E82016E8B791ABDAC272BDA9DB8F0 /* Pods-FBSandBoxBrowserManager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FBSandBoxBrowserManager_Tests-dummy.m"; sourceTree = "<group>"; };
+		74B8C96AEB5BAF21F944E9113A1D3A34 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		77DCA74FF238E32A95167F8C4706B9FE /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		78A56ED70BEAB395D7FCDA5596DFB94A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7BFFEDD452E6E6A7DDDE7933D099F530 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		815C635C3C2E06A780566397F5CF8351 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		82496C18DA56BC4B45E7295FCC68321E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837FEA901118BCEE9167CB01E1B3AEC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		86B919EC31EDC8CA20C7C8D10FC6D2B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		883ABE1F740F22638F3CC76D4826FF39 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		89721B1C0541058B33B1DD67B904ABC2 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		8D3374D17D684B1362D79CB2AAAD362B /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataResponse.h; path = GCDWebServer/Responses/GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		8F2A801BA0CCB50F15C606E37FF50B54 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		8FE14FB1623740F9D813A49FA710A03A /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A8DB5F7491F21A0A2A30BAC1AA13AF /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		987A10CFA13E2FF8FE0604E6F74428A1 /* Pods_FBSandBoxBrowserManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FBSandBoxBrowserManager_Example.framework; path = "Pods-FBSandBoxBrowserManager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A283231D5D0AC8EC2455403BE4E7F516 /* Pods_FBSandBoxBrowserManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FBSandBoxBrowserManager_Tests.framework; path = "Pods-FBSandBoxBrowserManager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8DED70A905642999B3327BDEE8761EC /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerURLEncodedFormRequest.h; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		A968D5DC318320CB16BCED6245ECC35D /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerDataRequest.h; path = GCDWebServer/Requests/GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		AC22E667E6CD08298771A308030D26A9 /* Pods-FBSandBoxBrowserManager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FBSandBoxBrowserManager_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ACDEC7C313986CB87C9A35667E92E1B7 /* GCDWebServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = GCDWebServer/Core/GCDWebServer.h; sourceTree = "<group>"; };
+		AD879C9B063D2F30897889CF835E6F40 /* FBSandBoxBrowserManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSandBoxBrowserManager-dummy.m"; sourceTree = "<group>"; };
+		AF9900F6FFE7783E5D6ABB58016312A4 /* Pods-FBSandBoxBrowserManager_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FBSandBoxBrowserManager_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B0F1BC1F94C8914739D38BC2D6F16909 /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GCDWebServer.framework; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E25E46A6334D4DCBAEBCADBD8C5010 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		B6C018C6DC7C3EC88C192C44FE12F026 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		B6CBC1C73D8825CA18A4681A3D6C7F00 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		BCC5B1500367CFA65C46F16D879DB5E6 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		C176A7609644EDD2FF07A5BBA0489322 /* Pods-FBSandBoxBrowserManager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FBSandBoxBrowserManager_Tests.modulemap"; sourceTree = "<group>"; };
+		C65A1AF3FB79C4090CFCDA3A856B49AC /* FBSandBoxBrowserManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSandBoxBrowserManager.h; path = FBSandBoxBrowserManager/Classes/FBSandBoxBrowserManager.h; sourceTree = "<group>"; };
+		C7A3A9622487EE9C2CB1BAACBFCC3E54 /* GCDWebServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GCDWebServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C7156BFB6869F2FEEFF0B3C4495DC8 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileResponse.h; path = GCDWebServer/Responses/GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		C86BBA5C8F8F65806F3E3BB35AEEF6FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CDE9CDD10233EBFC412B92F9E13746E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DE8D65CE6D67280BDAE371804D834F /* GCDWebUploader.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GCDWebUploader.bundle; path = GCDWebUploader/GCDWebUploader.bundle; sourceTree = "<group>"; };
+		D775EE80B0E7D3CCA0A6106973127E32 /* Pods-FBSandBoxBrowserManager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FBSandBoxBrowserManager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D8967C1F4C995F4064831CF339CB588F /* GCDWebServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServer.m; path = GCDWebServer/Core/GCDWebServer.m; sourceTree = "<group>"; };
+		D8A4A29283059E8A653D64FC46746081 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerRequest.m; path = GCDWebServer/Core/GCDWebServerRequest.m; sourceTree = "<group>"; };
+		DA4CDE43BDD7BD3793C1E27EBB6F4988 /* Pods-FBSandBoxBrowserManager_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FBSandBoxBrowserManager_Example-umbrella.h"; sourceTree = "<group>"; };
+		DAEF7DE54831B101608E80EABA923B4B /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		DC097BE4EF360049B59065B13F1D3650 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFunctions.h; path = GCDWebServer/Core/GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		E3AB435332FA69A62BD0C72416618FBB /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDWebServerHTTPStatusCodes.h; path = GCDWebServer/Core/GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		E729D52BE102608A34650B55932E3639 /* GCDWebServer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.xcconfig; sourceTree = "<group>"; };
+		EE1865B064CDD6EC096ABD6F86F091B8 /* GCDWebServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCDWebServer-dummy.m"; sourceTree = "<group>"; };
+		EE962C6CF418747CC317BBDBF1DA2571 /* FBSandBoxBrowserManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSandBoxBrowserManager.framework; path = FBSandBoxBrowserManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F065EE467A1360471B1D457EF6A877C9 /* Pods-FBSandBoxBrowserManager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FBSandBoxBrowserManager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F10B04FCAA025461DD88A64FCC7C0E66 /* GCDWebServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GCDWebServer.modulemap; sourceTree = "<group>"; };
+		F368C01BC7449BC2745424A200D44D18 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerURLEncodedFormRequest.m; path = GCDWebServer/Requests/GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		F5B97974483805A9AB68EABC2B4FC5A7 /* GCDWebServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCDWebServer-umbrella.h"; sourceTree = "<group>"; };
+		FA0CEFF736202F01D525FACF619C18ED /* FBSandBoxBrowserManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSandBoxBrowserManager-umbrella.h"; sourceTree = "<group>"; };
+		FE214F2638FCD7DDDBF4DFE453C71B8C /* FBSandBoxBrowserManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSandBoxBrowserManager.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1784DC8E0E8A8FB274B9C7D406637357 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3B9E4B11A1B88BDDAFD70BA008B02A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CB44ACFB7772BE8430821C181AA323D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16FBC0A264F8E8CFC7BB5781B94E0CFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D421A30A1BDB7E1C4216F64D0C939B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91D0138ACFAD733E4061F12E450C336C /* Foundation.framework in Frameworks */,
+				B27DFD6025D94758785918F1D6F6C060 /* QuartzCore.framework in Frameworks */,
+				841FF232C33C7D49C58CEFDBE7EEB92B /* UIKit.framework in Frameworks */,
+				7E9B14D5F8842A86CA86F2AF45230725 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D98B9F823018BAC8E7566F41C8D2A02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D479484F76DD970B3E93272C4E0615E3 /* Foundation.framework in Frameworks */,
+				6644C3852A37F4781A1C4638C7A9A8FD /* GCDWebServer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C22EA70EF7A7275375348FCB2FE23028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AE6225F6B1EF82D1D44B55032EBDACC /* CFNetwork.framework in Frameworks */,
+				A8F0266581D6533104BA3498A48374ED /* Foundation.framework in Frameworks */,
+				B7BE30FB7DBF3B2485850DA6722E9D81 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07ACFDF3D2A1AA1BB41F0374EE4B136C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F10B04FCAA025461DD88A64FCC7C0E66 /* GCDWebServer.modulemap */,
+				E729D52BE102608A34650B55932E3639 /* GCDWebServer.xcconfig */,
+				EE1865B064CDD6EC096ABD6F86F091B8 /* GCDWebServer-dummy.m */,
+				71248C93A945DE5F6CEC8321539445BD /* GCDWebServer-prefix.pch */,
+				F5B97974483805A9AB68EABC2B4FC5A7 /* GCDWebServer-umbrella.h */,
+				15E8C0519337F71C4B2B46EEA678FEE3 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GCDWebServer";
+			sourceTree = "<group>";
+		};
+		08B137F6A709FD646EA3525B1133E285 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D6DE8D65CE6D67280BDAE371804D834F /* GCDWebUploader.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		23290AA2A55788DB1921A718DA9F2122 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B6CBC1C73D8825CA18A4681A3D6C7F00 /* FBSnapshotTestCase.h */,
+				69875CC11B8FA3887C51C5C3A2D9AA4D /* FBSnapshotTestCase.m */,
+				883ABE1F740F22638F3CC76D4826FF39 /* FBSnapshotTestCasePlatform.h */,
+				B4E25E46A6334D4DCBAEBCADBD8C5010 /* FBSnapshotTestCasePlatform.m */,
+				815C635C3C2E06A780566397F5CF8351 /* FBSnapshotTestController.h */,
+				74B8C96AEB5BAF21F944E9113A1D3A34 /* FBSnapshotTestController.m */,
+				95A8DB5F7491F21A0A2A30BAC1AA13AF /* UIApplication+StrictKeyWindow.h */,
+				89721B1C0541058B33B1DD67B904ABC2 /* UIApplication+StrictKeyWindow.m */,
+				13730F841F7836B10F4DC487BCDD1E9A /* UIImage+Compare.h */,
+				77DCA74FF238E32A95167F8C4706B9FE /* UIImage+Compare.m */,
+				64B3FEAB258BC1DDFBF7546F41BFE16C /* UIImage+Diff.h */,
+				BCC5B1500367CFA65C46F16D879DB5E6 /* UIImage+Diff.m */,
+				5D180DD7DBE11CCB4E6F2BC9B4B50D88 /* UIImage+Snapshot.h */,
+				DAEF7DE54831B101608E80EABA923B4B /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		245BACE3C552CC6A80231508BDDF0D1B /* FBSandBoxBrowserManager */ = {
+			isa = PBXGroup;
+			children = (
+				C65A1AF3FB79C4090CFCDA3A856B49AC /* FBSandBoxBrowserManager.h */,
+				3A085E19F3E31C877D25CF8680A216B3 /* FBSandBoxBrowserManager.m */,
+				F245A127A44E79DB8A43435B670C3EE0 /* Pod */,
+				E578DB1E3C7C7785747B28FD3972DA3C /* Support Files */,
+			);
+			name = FBSandBoxBrowserManager;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2DC7C1B3A02CF7B22A09FFF36667EFE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7A3A9622487EE9C2CB1BAACBFCC3E54 /* GCDWebServer.framework */,
+				BBB9F2DCD37868CC2F17A02C6FBBE99C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35F978B3E43E9D6C08C76005463487CB /* WebUploader */ = {
+			isa = PBXGroup;
+			children = (
+				42B0190E1382991D995336245E454303 /* GCDWebUploader.h */,
+				5C4A87EABDAA819C12810EFF4C16761F /* GCDWebUploader.m */,
+				08B137F6A709FD646EA3525B1133E285 /* Resources */,
+			);
+			name = WebUploader;
+			sourceTree = "<group>";
+		};
+		363E72875BA84810D6CF3500F09FA54E /* Pods-FBSandBoxBrowserManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				13973CCF8260240FA5515346C6809D6C /* Info.plist */,
+				377289CD229754E2AFC03A81C1A13AC3 /* Pods-FBSandBoxBrowserManager_Example.modulemap */,
+				47B499A55B2336CC6939D7816E393D7F /* Pods-FBSandBoxBrowserManager_Example-acknowledgements.markdown */,
+				5BC22DA9BB771DF9DAD50CBC0E9FDD0F /* Pods-FBSandBoxBrowserManager_Example-acknowledgements.plist */,
+				6A790D697441ACE3292857F1B8E3E0BC /* Pods-FBSandBoxBrowserManager_Example-dummy.m */,
+				AF9900F6FFE7783E5D6ABB58016312A4 /* Pods-FBSandBoxBrowserManager_Example-frameworks.sh */,
+				6B4B4D0203B4E662D0FD528AC7076AF1 /* Pods-FBSandBoxBrowserManager_Example-resources.sh */,
+				DA4CDE43BDD7BD3793C1E27EBB6F4988 /* Pods-FBSandBoxBrowserManager_Example-umbrella.h */,
+				AC22E667E6CD08298771A308030D26A9 /* Pods-FBSandBoxBrowserManager_Example.debug.xcconfig */,
+				5C2D253FCF5E29624C29C17C88FBF0BB /* Pods-FBSandBoxBrowserManager_Example.release.xcconfig */,
+			);
+			name = "Pods-FBSandBoxBrowserManager_Example";
+			path = "Target Support Files/Pods-FBSandBoxBrowserManager_Example";
+			sourceTree = "<group>";
+		};
+		3C11DE043F6FC7766999E6455D42876E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0DA3973729BC568DC68B5469D59E972 /* FBSnapshotTestCase */,
+				FFA06A1A2CF6B589EB02044EF5F1C3C3 /* GCDWebServer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		68A703AC3E42C5EF63B7A9D638938254 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				0F5810DA657D6FFD379908DF8E4671BB /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A8DAD400116A95F46DEAD3EBF5521FB5 /* Development Pods */,
+				2DC7C1B3A02CF7B22A09FFF36667EFE7 /* Frameworks */,
+				3C11DE043F6FC7766999E6455D42876E /* Pods */,
+				B4E2B5D0263AB5AAF7FF9C2F458E5E82 /* Products */,
+				CE15E91C535C6E640DAA51FF198124B5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		836BF40BE8609B4CDA9E2520AB22F18C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6C018C6DC7C3EC88C192C44FE12F026 /* FBSnapshotTestCase.modulemap */,
+				5731C322F5150216A2705211B9C5A522 /* FBSnapshotTestCase.xcconfig */,
+				60D502AB6366987D412F9001F07465DE /* FBSnapshotTestCase-dummy.m */,
+				8FE14FB1623740F9D813A49FA710A03A /* FBSnapshotTestCase-prefix.pch */,
+				8F2A801BA0CCB50F15C606E37FF50B54 /* FBSnapshotTestCase-umbrella.h */,
+				CDE9CDD10233EBFC412B92F9E13746E8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		A0DA3973729BC568DC68B5469D59E972 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				23290AA2A55788DB1921A718DA9F2122 /* Core */,
+				836BF40BE8609B4CDA9E2520AB22F18C /* Support Files */,
+				68A703AC3E42C5EF63B7A9D638938254 /* SwiftSupport */,
+			);
+			name = FBSnapshotTestCase;
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		A8DAD400116A95F46DEAD3EBF5521FB5 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				245BACE3C552CC6A80231508BDDF0D1B /* FBSandBoxBrowserManager */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B492003C26E1A4B90B02913EC1C92937 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACDEC7C313986CB87C9A35667E92E1B7 /* GCDWebServer.h */,
+				D8967C1F4C995F4064831CF339CB588F /* GCDWebServer.m */,
+				410CE09CEB5E04DC20103634E0A5C60C /* GCDWebServerConnection.h */,
+				00556565F86DEB4278C0EEE72B26CBE0 /* GCDWebServerConnection.m */,
+				A968D5DC318320CB16BCED6245ECC35D /* GCDWebServerDataRequest.h */,
+				125D9CC6EAFF9939A0C3E42C684A3F67 /* GCDWebServerDataRequest.m */,
+				8D3374D17D684B1362D79CB2AAAD362B /* GCDWebServerDataResponse.h */,
+				37B050D928AA8BCF8607079383DEC78C /* GCDWebServerDataResponse.m */,
+				41138A52BE01D7BB8D620E48ED62562D /* GCDWebServerErrorResponse.h */,
+				2C130ACE445D9567D2F6D3617B03A290 /* GCDWebServerErrorResponse.m */,
+				1685C443B86E3899DA46C938EDB340DD /* GCDWebServerFileRequest.h */,
+				336FE919B8F72EE797277889528C340A /* GCDWebServerFileRequest.m */,
+				C7C7156BFB6869F2FEEFF0B3C4495DC8 /* GCDWebServerFileResponse.h */,
+				7BFFEDD452E6E6A7DDDE7933D099F530 /* GCDWebServerFileResponse.m */,
+				DC097BE4EF360049B59065B13F1D3650 /* GCDWebServerFunctions.h */,
+				390EA9D3C5002D3A9DE6699A22F1D179 /* GCDWebServerFunctions.m */,
+				E3AB435332FA69A62BD0C72416618FBB /* GCDWebServerHTTPStatusCodes.h */,
+				631A6784D3854F18EB1D9A2E2A6A137A /* GCDWebServerMultiPartFormRequest.h */,
+				0BE2B70C60964705912AA198D51ED21D /* GCDWebServerMultiPartFormRequest.m */,
+				1F7E9B3D36B107C6363025AF87194D4E /* GCDWebServerPrivate.h */,
+				4C99ED3703CE8A78AD8D09782E8586FB /* GCDWebServerRequest.h */,
+				D8A4A29283059E8A653D64FC46746081 /* GCDWebServerRequest.m */,
+				1F2A42C4BF876A8E7C9E0F11A984FCB1 /* GCDWebServerResponse.h */,
+				72DEBE2657305298A6A695143A1ED64A /* GCDWebServerResponse.m */,
+				175AB8AD71BD890B4146B15267B854CC /* GCDWebServerStreamedResponse.h */,
+				463F92C23EEC7EE3AC8594A3D44A520F /* GCDWebServerStreamedResponse.m */,
+				A8DED70A905642999B3327BDEE8761EC /* GCDWebServerURLEncodedFormRequest.h */,
+				F368C01BC7449BC2745424A200D44D18 /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B4E2B5D0263AB5AAF7FF9C2F458E5E82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE962C6CF418747CC317BBDBF1DA2571 /* FBSandBoxBrowserManager.framework */,
+				0ECED0CA200288159B4B8562F3A48A96 /* FBSnapshotTestCase.framework */,
+				B0F1BC1F94C8914739D38BC2D6F16909 /* GCDWebServer.framework */,
+				987A10CFA13E2FF8FE0604E6F74428A1 /* Pods_FBSandBoxBrowserManager_Example.framework */,
+				A283231D5D0AC8EC2455403BE4E7F516 /* Pods_FBSandBoxBrowserManager_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBB9F2DCD37868CC2F17A02C6FBBE99C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2A415C376B8E44D35F067A1B7CC22B4E /* CFNetwork.framework */,
+				39C2CBF9AAE3F79B436F49068AEFC9DE /* Foundation.framework */,
+				43302AF3B653F3E5D9ADB3B7BE4BE4F8 /* MobileCoreServices.framework */,
+				837FEA901118BCEE9167CB01E1B3AEC4 /* QuartzCore.framework */,
+				C86BBA5C8F8F65806F3E3BB35AEEF6FC /* UIKit.framework */,
+				78A56ED70BEAB395D7FCDA5596DFB94A /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C5E93CF3CCFC0BC3CE9977AF9C226842 /* Pods-FBSandBoxBrowserManager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				82496C18DA56BC4B45E7295FCC68321E /* Info.plist */,
+				C176A7609644EDD2FF07A5BBA0489322 /* Pods-FBSandBoxBrowserManager_Tests.modulemap */,
+				F065EE467A1360471B1D457EF6A877C9 /* Pods-FBSandBoxBrowserManager_Tests-acknowledgements.markdown */,
+				D775EE80B0E7D3CCA0A6106973127E32 /* Pods-FBSandBoxBrowserManager_Tests-acknowledgements.plist */,
+				741E82016E8B791ABDAC272BDA9DB8F0 /* Pods-FBSandBoxBrowserManager_Tests-dummy.m */,
+				0CFD062AEF7F14264304CF83A54043DD /* Pods-FBSandBoxBrowserManager_Tests-frameworks.sh */,
+				5444348BFBD9CE52C05FF852184CC520 /* Pods-FBSandBoxBrowserManager_Tests-resources.sh */,
+				4828E3465CE42D0CE12384EC951D5917 /* Pods-FBSandBoxBrowserManager_Tests-umbrella.h */,
+				5405185325A47E972D6AE0771344EB5C /* Pods-FBSandBoxBrowserManager_Tests.debug.xcconfig */,
+				183234ACC700E5DA7642BDAAAA48F637 /* Pods-FBSandBoxBrowserManager_Tests.release.xcconfig */,
+			);
+			name = "Pods-FBSandBoxBrowserManager_Tests";
+			path = "Target Support Files/Pods-FBSandBoxBrowserManager_Tests";
+			sourceTree = "<group>";
+		};
+		CE15E91C535C6E640DAA51FF198124B5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				363E72875BA84810D6CF3500F09FA54E /* Pods-FBSandBoxBrowserManager_Example */,
+				C5E93CF3CCFC0BC3CE9977AF9C226842 /* Pods-FBSandBoxBrowserManager_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E578DB1E3C7C7785747B28FD3972DA3C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE214F2638FCD7DDDBF4DFE453C71B8C /* FBSandBoxBrowserManager.modulemap */,
+				61356F8078B6C2E471B808E6AA2009E7 /* FBSandBoxBrowserManager.xcconfig */,
+				AD879C9B063D2F30897889CF835E6F40 /* FBSandBoxBrowserManager-dummy.m */,
+				64359DD752B048033F0BAFF4A05F2BCE /* FBSandBoxBrowserManager-prefix.pch */,
+				FA0CEFF736202F01D525FACF619C18ED /* FBSandBoxBrowserManager-umbrella.h */,
+				594D529E73523CC60070A67C6C990B5F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FBSandBoxBrowserManager";
+			sourceTree = "<group>";
+		};
+		F245A127A44E79DB8A43435B670C3EE0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0CDA7702F59E1485A941375F52B9A91C /* FBSandBoxBrowserManager.podspec */,
+				86B919EC31EDC8CA20C7C8D10FC6D2B6 /* LICENSE */,
+				1613E5942F6E8A449C8B5BD89331E90B /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FFA06A1A2CF6B589EB02044EF5F1C3C3 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				B492003C26E1A4B90B02913EC1C92937 /* Core */,
+				07ACFDF3D2A1AA1BB41F0374EE4B136C /* Support Files */,
+				35F978B3E43E9D6C08C76005463487CB /* WebUploader */,
+			);
+			name = GCDWebServer;
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		10ECAE094B0AC6F5B70CBE62FED7F579 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23EE01285F43EDEBE47385D46DC82C4F /* GCDWebServer-umbrella.h in Headers */,
+				A3279A9E414353E0F77E226FB78129CB /* GCDWebServer.h in Headers */,
+				3180A0DFDC7F3FDFDEE67BBC8C0EDF76 /* GCDWebServerConnection.h in Headers */,
+				A038A24BB98078B39CC0092E9EF00FB6 /* GCDWebServerDataRequest.h in Headers */,
+				A5FC9EAFB2986806F62DF6D2B7BFB0A5 /* GCDWebServerDataResponse.h in Headers */,
+				8195FAD8C0FCAA29FA52F394E05A1089 /* GCDWebServerErrorResponse.h in Headers */,
+				767C8D7DCE481775F09EE596C8E1B055 /* GCDWebServerFileRequest.h in Headers */,
+				9276F27A2805C357914BACDF898EB9A1 /* GCDWebServerFileResponse.h in Headers */,
+				A0785AEB1B7053626D5E9202F0465592 /* GCDWebServerFunctions.h in Headers */,
+				05008FE205F2C2CFF76EB8D95A4FF199 /* GCDWebServerHTTPStatusCodes.h in Headers */,
+				93A901D04F270F6A9EC31CBAA4FF121F /* GCDWebServerMultiPartFormRequest.h in Headers */,
+				FB143055436A0628B0670DE84B6DBE7A /* GCDWebServerPrivate.h in Headers */,
+				7BA9C70AA872F48D43160B752E04B022 /* GCDWebServerRequest.h in Headers */,
+				49CFD61863234EDB78DE91235D6DB6C6 /* GCDWebServerResponse.h in Headers */,
+				61D70521098CF00F21B12765461AA594 /* GCDWebServerStreamedResponse.h in Headers */,
+				E6AF5CC692B2E8E7B88EB47BED3F6BE7 /* GCDWebServerURLEncodedFormRequest.h in Headers */,
+				CD4F27D86269DB63EBCCCFF331EEF876 /* GCDWebUploader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30096BEBF2E7D21EB0E3C328C92BE7A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D141DECDD4B18CAA06CF9FC15050A1 /* Pods-FBSandBoxBrowserManager_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34EAE4640105C10C951AC90838005D62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82817B039CF7278067CA3E5ED6735AAF /* FBSandBoxBrowserManager-umbrella.h in Headers */,
+				76486403F4B84F7DC55757A80D713130 /* FBSandBoxBrowserManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC6F5AC11E37A1EB45C6473C9E800B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */,
+				BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */,
+				2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */,
+				BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */,
+				CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */,
+				051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */,
+				421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE69A7B4A255C8C01E6BE30B4771722 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336C0DB24D7ACF66F99852CDF3C85863 /* Pods-FBSandBoxBrowserManager_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28097D43AF5CD8DA838ABD52A053790 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				E2E80CCD063D04B57A1A5E140726E8A4 /* Sources */,
+				1D421A30A1BDB7E1C4216F64D0C939B1 /* Frameworks */,
+				9DC6F5AC11E37A1EB45C6473C9E800B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 0ECED0CA200288159B4B8562F3A48A96 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5189963A29429293A0B3A9508DAC59B8 /* GCDWebServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E50C7D62BE9233D8F634CADE5E132772 /* Build configuration list for PBXNativeTarget "GCDWebServer" */;
+			buildPhases = (
+				FBCA64AFF4D0E48FEB4C1365A340E532 /* Sources */,
+				C22EA70EF7A7275375348FCB2FE23028 /* Frameworks */,
+				10ECAE094B0AC6F5B70CBE62FED7F579 /* Headers */,
+				B961C7CFBFC6FD2597EB15A289ECA816 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDWebServer;
+			productName = GCDWebServer;
+			productReference = B0F1BC1F94C8914739D38BC2D6F16909 /* GCDWebServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77D47A03E199A063AF0EF82D92C1344A /* Pods-FBSandBoxBrowserManager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971DF50F39B3EAEBCF222033D8137761 /* Build configuration list for PBXNativeTarget "Pods-FBSandBoxBrowserManager_Tests" */;
+			buildPhases = (
+				B172B463E573F69CD773C5EA0055D803 /* Sources */,
+				1CB44ACFB7772BE8430821C181AA323D /* Frameworks */,
+				DEE69A7B4A255C8C01E6BE30B4771722 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				949540D46CAB03C01E57CB6EA69D6C71 /* PBXTargetDependency */,
+				6C19C6590836C2469E0D58A9723835A4 /* PBXTargetDependency */,
+			);
+			name = "Pods-FBSandBoxBrowserManager_Tests";
+			productName = "Pods-FBSandBoxBrowserManager_Tests";
+			productReference = A283231D5D0AC8EC2455403BE4E7F516 /* Pods_FBSandBoxBrowserManager_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99DFC4EBAC67801733DE7F7688DC1163 /* Pods-FBSandBoxBrowserManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CE83FB48450040DCAAF3FFCAB9C4023 /* Build configuration list for PBXNativeTarget "Pods-FBSandBoxBrowserManager_Example" */;
+			buildPhases = (
+				C4CB6EF7D936E253D92F756A7945B316 /* Sources */,
+				1784DC8E0E8A8FB274B9C7D406637357 /* Frameworks */,
+				30096BEBF2E7D21EB0E3C328C92BE7A3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C2282C8FC5B9C35CCB586F5971A7601 /* PBXTargetDependency */,
+				09C460AD09A59C1F2A79F8DF879A5B35 /* PBXTargetDependency */,
+			);
+			name = "Pods-FBSandBoxBrowserManager_Example";
+			productName = "Pods-FBSandBoxBrowserManager_Example";
+			productReference = 987A10CFA13E2FF8FE0604E6F74428A1 /* Pods_FBSandBoxBrowserManager_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA4CA1050E7B2D3FBFAF34767F485AE9 /* FBSandBoxBrowserManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B4DBBB9EB57473A582A2269574D3C7E /* Build configuration list for PBXNativeTarget "FBSandBoxBrowserManager" */;
+			buildPhases = (
+				26CC41D401AB0526AE1939059FA7B93A /* Sources */,
+				6D98B9F823018BAC8E7566F41C8D2A02 /* Frameworks */,
+				34EAE4640105C10C951AC90838005D62 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E4FEF48971B1993E5D6FD86F1B25304 /* PBXTargetDependency */,
+			);
+			name = FBSandBoxBrowserManager;
+			productName = FBSandBoxBrowserManager;
+			productReference = EE962C6CF418747CC317BBDBF1DA2571 /* FBSandBoxBrowserManager.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B4E2B5D0263AB5AAF7FF9C2F458E5E82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA4CA1050E7B2D3FBFAF34767F485AE9 /* FBSandBoxBrowserManager */,
+				34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */,
+				5189963A29429293A0B3A9508DAC59B8 /* GCDWebServer */,
+				99DFC4EBAC67801733DE7F7688DC1163 /* Pods-FBSandBoxBrowserManager_Example */,
+				77D47A03E199A063AF0EF82D92C1344A /* Pods-FBSandBoxBrowserManager_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B961C7CFBFC6FD2597EB15A289ECA816 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3B2EEAB090298D562C09366C1F1354 /* GCDWebUploader.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26CC41D401AB0526AE1939059FA7B93A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8796996A2B075A2279241A547AD236D9 /* FBSandBoxBrowserManager-dummy.m in Sources */,
+				163B70D7BEF36E716D7C18D09A8DB3ED /* FBSandBoxBrowserManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B172B463E573F69CD773C5EA0055D803 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58862D15341ABBA671EA45F6FC1EFAC5 /* Pods-FBSandBoxBrowserManager_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4CB6EF7D936E253D92F756A7945B316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D50634460F119A226F32CC64C6B5BCC4 /* Pods-FBSandBoxBrowserManager_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E80CCD063D04B57A1A5E140726E8A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */,
+				BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */,
+				DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */,
+				A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */,
+				1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */,
+				094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */,
+				69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */,
+				35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */,
+				756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBCA64AFF4D0E48FEB4C1365A340E532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542EF018C218A58F3D909A7873A287D1 /* GCDWebServer-dummy.m in Sources */,
+				9E39A5C859FB160DA76E6399E678B2AF /* GCDWebServer.m in Sources */,
+				9CB1A9D4F9227B259C687EE42F670C38 /* GCDWebServerConnection.m in Sources */,
+				630453A5F46ECB86BD74FA6667509B30 /* GCDWebServerDataRequest.m in Sources */,
+				19B1ECA05047795F4CEEBEC230028768 /* GCDWebServerDataResponse.m in Sources */,
+				69C306ED09F48DE95293681EED74085C /* GCDWebServerErrorResponse.m in Sources */,
+				34E61414987B44A3F9606C945C67ED27 /* GCDWebServerFileRequest.m in Sources */,
+				54274588A9A2D333B614399A47D860BE /* GCDWebServerFileResponse.m in Sources */,
+				17C70C36F8315E8C21BF63CFFD0596E8 /* GCDWebServerFunctions.m in Sources */,
+				E16B3FBC0F81A39DDC06B3374AFDCD83 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				7566AF2B0E802B1150629B1C4C876F19 /* GCDWebServerRequest.m in Sources */,
+				051CE582F078D901B4467819ED5FB61B /* GCDWebServerResponse.m in Sources */,
+				FB34D8295D50C6C0DF9371D3AD536D9F /* GCDWebServerStreamedResponse.m in Sources */,
+				DABA8DDE33B143E87190B5B6FAEF1501 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				89C1DDCA6C20821C2E0A4E6AEDE142C9 /* GCDWebUploader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09C460AD09A59C1F2A79F8DF879A5B35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = 5189963A29429293A0B3A9508DAC59B8 /* GCDWebServer */;
+			targetProxy = 29E1288F03B02354B53DBB64D5F172CD /* PBXContainerItemProxy */;
+		};
+		1C2282C8FC5B9C35CCB586F5971A7601 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSandBoxBrowserManager;
+			target = FA4CA1050E7B2D3FBFAF34767F485AE9 /* FBSandBoxBrowserManager */;
+			targetProxy = 8C07ACD0E21B09C78077B4DF81B8BF19 /* PBXContainerItemProxy */;
+		};
+		6C19C6590836C2469E0D58A9723835A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FBSandBoxBrowserManager_Example";
+			target = 99DFC4EBAC67801733DE7F7688DC1163 /* Pods-FBSandBoxBrowserManager_Example */;
+			targetProxy = C13D358FF21B86D072C8D035C1B8206B /* PBXContainerItemProxy */;
+		};
+		6E4FEF48971B1993E5D6FD86F1B25304 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GCDWebServer;
+			target = 5189963A29429293A0B3A9508DAC59B8 /* GCDWebServer */;
+			targetProxy = C0B88812384ECDB271A5ECB99F24495A /* PBXContainerItemProxy */;
+		};
+		949540D46CAB03C01E57CB6EA69D6C71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 34CD2E3428AB802BACA62286FF5074B1 /* FBSnapshotTestCase */;
+			targetProxy = DB4853800BBA3386C4AB3C7EEB8090FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1730B933372C71567FF128E4F24FE417 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E729D52BE102608A34650B55932E3639 /* GCDWebServer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		254668265648CAC14F5A566AB5228461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5405185325A47E972D6AE0771344EB5C /* Pods-FBSandBoxBrowserManager_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FBSandBoxBrowserManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FBSandBoxBrowserManager_Tests/Pods-FBSandBoxBrowserManager_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85A7376635C54350D9770F94364C5A93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E729D52BE102608A34650B55932E3639 /* GCDWebServer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GCDWebServer/GCDWebServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GCDWebServer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GCDWebServer/GCDWebServer.modulemap";
+				PRODUCT_MODULE_NAME = GCDWebServer;
+				PRODUCT_NAME = GCDWebServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A38749C15819B02B742737E489EE0EEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5731C322F5150216A2705211B9C5A522 /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB74B6A60AA3078D80BB7D633DFBCA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5731C322F5150216A2705211B9C5A522 /* FBSnapshotTestCase.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BD662DF4CDA5C5F6452EAA5EB3635E0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C2D253FCF5E29624C29C17C88FBF0BB /* Pods-FBSandBoxBrowserManager_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FBSandBoxBrowserManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FBSandBoxBrowserManager_Example/Pods-FBSandBoxBrowserManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8E79DC0621899051735F623F8879158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61356F8078B6C2E471B808E6AA2009E7 /* FBSandBoxBrowserManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSandBoxBrowserManager/FBSandBoxBrowserManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSandBoxBrowserManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSandBoxBrowserManager/FBSandBoxBrowserManager.modulemap";
+				PRODUCT_MODULE_NAME = FBSandBoxBrowserManager;
+				PRODUCT_NAME = FBSandBoxBrowserManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D01C28C0BBFC2BF2013D9A153994A498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61356F8078B6C2E471B808E6AA2009E7 /* FBSandBoxBrowserManager.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSandBoxBrowserManager/FBSandBoxBrowserManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSandBoxBrowserManager/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSandBoxBrowserManager/FBSandBoxBrowserManager.modulemap";
+				PRODUCT_MODULE_NAME = FBSandBoxBrowserManager;
+				PRODUCT_NAME = FBSandBoxBrowserManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFB2C6945038FE3100C4F0C7E341AE71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183234ACC700E5DA7642BDAAAA48F637 /* Pods-FBSandBoxBrowserManager_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FBSandBoxBrowserManager_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FBSandBoxBrowserManager_Tests/Pods-FBSandBoxBrowserManager_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F78DD520792E8BDCFCEBC131D13F352E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC22E667E6CD08298771A308030D26A9 /* Pods-FBSandBoxBrowserManager_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FBSandBoxBrowserManager_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FBSandBoxBrowserManager_Example/Pods-FBSandBoxBrowserManager_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B4DBBB9EB57473A582A2269574D3C7E /* Build configuration list for PBXNativeTarget "FBSandBoxBrowserManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D01C28C0BBFC2BF2013D9A153994A498 /* Debug */,
+				C8E79DC0621899051735F623F8879158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CE83FB48450040DCAAF3FFCAB9C4023 /* Build configuration list for PBXNativeTarget "Pods-FBSandBoxBrowserManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78DD520792E8BDCFCEBC131D13F352E /* Debug */,
+				BD662DF4CDA5C5F6452EAA5EB3635E0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971DF50F39B3EAEBCF222033D8137761 /* Build configuration list for PBXNativeTarget "Pods-FBSandBoxBrowserManager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				254668265648CAC14F5A566AB5228461 /* Debug */,
+				DFB2C6945038FE3100C4F0C7E341AE71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E50C7D62BE9233D8F634CADE5E132772 /* Build configuration list for PBXNativeTarget "GCDWebServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1730B933372C71567FF128E4F24FE417 /* Debug */,
+				85A7376635C54350D9770F94364C5A93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28097D43AF5CD8DA838ABD52A053790 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38749C15819B02B742737E489EE0EEB /* Debug */,
+				AB74B6A60AA3078D80BB7D633DFBCA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

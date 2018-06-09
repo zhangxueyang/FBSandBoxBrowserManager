@@ -61,11 +61,11 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		936820272E527FEC110F4397 /* FBSandBoxBrowserManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FBSandBoxBrowserManager.podspec; path = ../FBSandBoxBrowserManager.podspec; sourceTree = "<group>"; };
+		936820272E527FEC110F4397 /* FBSandBoxBrowserManager.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FBSandBoxBrowserManager.podspec; path = ../FBSandBoxBrowserManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8112736F2EEE98492BE0857 /* Pods_FBSandBoxBrowserManager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBSandBoxBrowserManager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C477A0FFF3F1DBC4FA1C4929 /* Pods_FBSandBoxBrowserManager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBSandBoxBrowserManager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C63C78C3BAD42476AADC3371 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D97C5FC96CFAAFB0E13FD873 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C63C78C3BAD42476AADC3371 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D97C5FC96CFAAFB0E13FD873 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EA85B05C937CA43E5AA96B96 /* Pods-FBSandBoxBrowserManager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBSandBoxBrowserManager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBSandBoxBrowserManager_Tests/Pods-FBSandBoxBrowserManager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -339,10 +339,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FBSandBoxBrowserManager_Example/Pods-FBSandBoxBrowserManager_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FBSandBoxBrowserManager/FBSandBoxBrowserManager.framework",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSandBoxBrowserManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

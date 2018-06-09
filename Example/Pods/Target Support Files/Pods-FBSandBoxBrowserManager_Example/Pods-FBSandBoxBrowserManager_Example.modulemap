@@ -1,0 +1,6 @@
+framework module Pods_FBSandBoxBrowserManager_Example {
+  umbrella header "Pods-FBSandBoxBrowserManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
