@@ -1,17 +1,17 @@
 # FBSandBoxBrowserManager
 
 
-##说明
-```
+## 说明
 项目依赖于 -------   [GCDWebServer](https://github.com/swisspol/GCDWebServer) 
+```
 如果不想使用我的,可以自己用 GCDWebServer 自己弄!
   s.dependency 'GCDWebServer', '~> 3.0'
   s.dependency 'GCDWebServer/WebUploader', '~> 3.0'
   
   我只是用了这个第三方库, 自己使用方便!
 ```
-
-##使用
+ 
+## 使用
 ```
 #ifdef DEBUG
 
@@ -27,7 +27,7 @@
 }
 ```
 
-##效果
+## 效果
 ![Image text](https://github.com/zhangxueyang/FBSandBoxBrowserManager/blob/master/Images/Snip20180609_3.png)
 ![Image text](https://github.com/zhangxueyang/FBSandBoxBrowserManager/blob/master/Images/Snip20180609_4.png)
 
