@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FBSandBoxBrowserManager_Example' do
+  pod 'FBSandBoxBrowserManager', :path => '../'
+
+  target 'FBSandBoxBrowserManager_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
