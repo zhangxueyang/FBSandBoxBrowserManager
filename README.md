@@ -28,11 +28,12 @@
 ```
 
 ##效果
-[网页效果](https://github.com/zhangxueyang/FBSandBoxBrowserManager/blob/master/Images/Snip20180609_3.png)
-[APP内页面](https://github.com/zhangxueyang/FBSandBoxBrowserManager/blob/master/Images/Snip20180609_4.png)
+![Image text](https://github.com/zhangxueyang/FBSandBoxBrowserManager/blob/master/Images/Snip20180609_3.png)
+![Image text](https://github.com/zhangxueyang/FBSandBoxBrowserManager/blob/master/Images/Snip20180609_4.png)
 
 
 ## 找不到文件解决办法
+```
 pod 'FBObjcSugar'
 
 -------------------------------------------------------------
@@ -51,4 +52,5 @@ pod setup
 rm ~/Library/Caches/CocoaPods/search_index.json
 pod search
 -------------------------------------------------------------
+```
 
